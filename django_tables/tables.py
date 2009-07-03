@@ -216,7 +216,7 @@ class BaseTable(object):
         # definition. Note that this is different from forms, where the
         # copy is made available in a ``fields`` attribute. See the
         # ``Table`` class docstring for more information.
-        self.base_columns = copy.deepcopy(type(self).base_columns)
+        #self.base_columns = copy.deepcopy(type(self).base_columns)
 
     def _build_snapshot(self):
         """Rebuilds the table whenever it's options change.
